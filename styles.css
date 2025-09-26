@@ -1,0 +1,56 @@
+* {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 50vw;
+  justify-self: center;
+  margin: 1rem 0;
+  background-color: aqua;
+  border-radius: 12px;
+  height: 70vh;
+  padding: 22px 12px;
+}
+
+form input,
+div select {
+  width: 80%;
+  height: 2rem;
+}
+
+div {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+div label {
+  flex: 5;
+  width: 40%;
+  font-weight: 500;
+}
+
+div select {
+  flex: 6;
+  width: 60%;
+  margin: 1rem;
+}
+
+button {
+  height: 3rem;
+  padding: 12px 24px;
+  border-radius: 25px;
+  background-color: rgb(5, 3, 122);
+  border: 1px solid gray;
+  color: white;
+}
+
+p {
+  letter-spacing: 0.6345px;
+}

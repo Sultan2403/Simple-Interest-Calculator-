@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Interest Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./Assets/favicon_io/favicon.ico" type="image/png">
+
+
+    <!-- Resources -->
+    <script src="https://kit.fontawesome.com/827363fa19.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1>Welcome To The Simple Interest Calculator <i class="fa-solid fa-calculator"></i> </h1>
+    <p>How To Use?</p>
+    <br />
+    <p>Input your values into the following input fields and click the calculate button</p>
+    <br />
+    <p>N.B: Input correct values to get a correct answer</p>
+    <form>
+        <label for="principal">Principal Amount</label>
+        <input name="Principal-Amount" type="number" id="principal" placeholder="Enter Principal Amount Here"
+            required />
+        <label for="Rate">Rate</label>
+        <input name="Rate" type="number" id="Rate" placeholder="Enter Rate In % Here" required />
+        <label for="Time">Time</label>
+        <input name="Time" type="number" id="Time" placeholder="Enter Time Here" required />
+        <div>
+            <label for="Time-Unit">Select Time Frame </label>
+            <select id="Time-Unit" name="time-options" required>
+                <option value="" disabled selected>Select A Time Frame</option>
+                <option id="Years" value="1">Years</option>
+                <option id="Months" value="1/12">Months</option>
+                <option id="Days" value="1/365">Days</option>
+            </select>
+        </div>
+        <button id="calculate-button" type="button">Calculate Simple Interest</button>
+        <p id="result_1"></p>
+        <p id="result_2"></p>
+    </form>
+    <script src="./stuff.js"></script>
+</body>
+
+</html>
