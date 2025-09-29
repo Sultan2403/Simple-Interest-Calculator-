@@ -28,6 +28,6 @@ Calc_Button.addEventListener("click", function () {
     // Result
     const Simple_Interest = (P * R * T) / 100;
     const Total_Amount = Simple_Interest + P;
-    result_total_amount.innerHTML = ("Total Amount After " + Time.value + chosen_opt + " is " + Total_Amount);
+    result_total_amount.textContent = ("Total Amount After " + Time.value + chosen_opt + " is " + Total_Amount);
     result_simple_interest.textContent = (" Your Simple Interest is: " + Simple_Interest);
 });
